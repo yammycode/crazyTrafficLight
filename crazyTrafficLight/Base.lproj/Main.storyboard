@@ -23,7 +23,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="35H-AX-MnG"/>
+                                            <constraint firstAttribute="width" secondItem="MCq-hM-fHR" secondAttribute="height" multiplier="1:1" id="AZB-jD-EE7"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Br2-sv-p2x">
@@ -43,9 +43,11 @@
                                     <constraint firstItem="kaJ-48-RUg" firstAttribute="width" secondItem="MCq-hM-fHR" secondAttribute="width" id="VwM-W0-xvy"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oND-xT-VF6">
-                                <rect key="frame" x="131" y="666" width="152" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oND-xT-VF6">
+                                <rect key="frame" x="132" y="790" width="150" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Wpm-yP-oK1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="START"/>
@@ -57,7 +59,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemFillColor"/>
                         <constraints>
+                            <constraint firstItem="oND-xT-VF6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MIQ-KE-x3k"/>
                             <constraint firstItem="r3h-yt-bom" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P7B-br-MLv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oND-xT-VF6" secondAttribute="bottom" constant="30" id="kzO-oe-MQh"/>
                             <constraint firstItem="r3h-yt-bom" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="trH-Rp-6ns"/>
                         </constraints>
                     </view>
